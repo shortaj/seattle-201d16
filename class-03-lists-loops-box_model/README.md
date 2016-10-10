@@ -9,7 +9,6 @@
 
 ####Announcements
 
-- Sam and Aaron will be in a meeting during the noon hour, and also 2:30-3:00.
 
 ####Schedule for today
 
