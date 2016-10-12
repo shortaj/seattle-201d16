@@ -145,3 +145,24 @@ Have students go to the command line and `apm install linter-eslint`. Have them 
 
 [-top-](#top)
 
+<a id="atom-packages"></a>
+## Extra Packages in Atom for an Easier Life
+
+- Emmet
+  - Allows for tab-completion to give you code snippets in your language of choice
+  - Shell command: `apm install emmet`
+- Open In Browser
+  - Adds an option to your right-click menu that lets you open a file from Atom in your browser
+  - Shell command: `apm install open-in-browser`
+- Minimap
+  - Shows a zoomed-out view of the current file in the right-hand side of your editor
+  - Shell command: `apm install minimap`
+- Highlight Selected
+  - Highlights all other instances of the current selected word when double clicking.
+  - Shell command: `apm install highlight-selected`
+- Tree View & Git Status
+  - Shows the directory tree starting from where you opened Atom. Also shows whether the current file is different from the last-saved commit.
+  - Shell command: `apm install tree-view-git-status`
+- File Icons
+  - Recognizes the types of the files in the tree and gives appropriate icons for them.
+  - Shell command: `apm install file-icons`
