@@ -2,6 +2,10 @@
 
 - Write a program that accepts user input and, based on that input, displays messages back to the user.
 
+- Verify that you know how to use your Learning Journal. This is a separate project that lives in a separate Git/GitHub repository.
+
+- There is an example of the Learning Journal in another directory in this daily class directory. Take a look and use it as a guide and as inspiration. These will be assigned every Monday-Wednesday-Friday, but you can feel free to write in them every day.
+
 
 # Technical Requirements
 
