@@ -8,16 +8,14 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
+
 function sum(a,b) { //eslint-disable-line
-  if (c.typeof() === 'number') {
-    return ('The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + (a + b + c) + '.');
-  } else {
-    return ('The product of ' + a + ' and ' + b + ' is ' + (a + b) + '.');
-  }
-}
+  var sumAnswer = (a + b);
+  var sumText = ('The sum of ' + a + ' and ' + b + ' is ' + (a + b) + '.');
+  return [sumAnswer, sumText];
+};
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
-
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
@@ -29,14 +27,11 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply( a, b, c) { //eslint-disable-line
-  if (c.typeof() === 'number') {
-    return ('The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + (a * b * c) + '.');
-  } else {
-    return ('The product of ' + a + ' and ' + b + ' is ' + (a * b) + '.');
-  }
+function multiply(a, b) { //eslint-disable-line
+  var multiplyAnswer = (a * b);
+  var multiplyText = ('The product of ' + a + ' and ' + b + ' is ' + (a * b) + '.');
+  return [multiplyAnswer, multiplyText];
 }
-
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(5,9);
 
@@ -55,16 +50,19 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
-  sum(a, b, c);
+  var sumA = sum(sum(a,b)[0], c)[0];
+  var sumAText = (a + ' and ' + b + ' and ' + c + ' sum to ' + sumA + '.');
   //"4 and 7 and 5 sum to 16."
   //(a + b) + c
-  multiply(a, b, c);
+  var multiplyA = multiply(multiply(a,b)[0], c)[0];
+  var multiplyText = ('The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiplyA + '.');
+  return [sumA, sumAText, multiplyText];
   //"The product of 4 and 7 and 5 is 140."
   //a * b * c
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
