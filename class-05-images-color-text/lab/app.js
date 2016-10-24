@@ -9,12 +9,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a,b) { //eslint-disable-line
-  if (c.typeof() === 'number') {
-    return ('The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + (a + b + c) + '.');
-  } else {
-    return ('The product of ' + a + ' and ' + b + ' is ' + (a + b) + '.');
-  }
+  var answer = a + b;
+  return sum[1] = 'The sum of ' + a + ' and ' + b + ' is ' + answer + '.';
 }
+
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
 
@@ -29,14 +27,9 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply( a, b, c) { //eslint-disable-line
-  if (c.typeof() === 'number') {
-    return ('The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + (a * b * c) + '.');
-  } else {
-    return ('The product of ' + a + ' and ' + b + ' is ' + (a * b) + '.');
-  }
+function multiply( a, b) { //eslint-disable-line
+  return ('The product of ' + a + ' and ' + b + ' is ' + (a * b) + '.');
 }
-
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(5,9);
 
@@ -55,7 +48,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
-  sum(a, b, c);
+  var sumA = sum(a,b);
+  var sumB = sum((parseInt(sumA.substring(22, 24 ))),c);
+  var sumC = parseInt(sumB.substring(23, 25));
+  console.log(a + ' and ' + b + ' and ' + c + ' sum to ' + sumC + '.');
+  sumAndMultiply[1] = (a,b,c);
+  return sumAndMultiply[1] = (a + ' and ' + b + ' and ' + c + ' sum to ' + sumC + '.');
   //"4 and 7 and 5 sum to 16."
   //(a + b) + c
   multiply(a, b, c);
@@ -64,7 +62,7 @@ function sumAndMultiply(a,b,c){ //eslint-disable-line
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
