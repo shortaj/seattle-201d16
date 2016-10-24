@@ -14,7 +14,6 @@ function sum(a,b) { //eslint-disable-line
   var sumText = ('The sum of ' + a + ' and ' + b + ' is ' + (a + b) + '.');
   return [sumAnswer, sumText];
 };
-
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
@@ -51,15 +50,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
-  var sumA = sum(a,b);
-  var sumB = sum((parseInt(sumA.substring(22, 24 ))),c);
-  var sumC = parseInt(sumB.substring(23, 25));
-  console.log(a + ' and ' + b + ' and ' + c + ' sum to ' + sumC + '.');
-  sumAndMultiply[1] = (a,b,c);
-  return sumAndMultiply[1] = (a + ' and ' + b + ' and ' + c + ' sum to ' + sumC + '.');
+  var sumA = sum(sum(a,b)[0], c)[0];
+  var sumAText = (a + ' and ' + b + ' and ' + c + ' sum to ' + sumA + '.');
   //"4 and 7 and 5 sum to 16."
   //(a + b) + c
-  multiply(a, b, c);
+  var multiplyA = multiply(multiply(a,b)[0], c)[0];
+  var multiplyText = ('The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiplyA + '.');
+  return [sumA, sumAText, multiplyText];
   //"The product of 4 and 7 and 5 is 140."
   //a * b * c
 }
